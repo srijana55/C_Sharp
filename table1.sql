@@ -1,0 +1,1 @@
+SELECT * FROM srijana_schema.user;

@@ -1,0 +1,17 @@
+D:\SL\third_sem\third_sem\bin\Debug\net6.0-windows\third_sem.exe
+D:\SL\third_sem\third_sem\bin\Debug\net6.0-windows\third_sem.deps.json
+D:\SL\third_sem\third_sem\bin\Debug\net6.0-windows\third_sem.runtimeconfig.json
+D:\SL\third_sem\third_sem\bin\Debug\net6.0-windows\third_sem.dll
+D:\SL\third_sem\third_sem\bin\Debug\net6.0-windows\third_sem.pdb
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.csproj.AssemblyReference.cache
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.Form1.resources
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.csproj.GenerateResource.cache
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.GeneratedMSBuildEditorConfig.editorconfig
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.AssemblyInfoInputs.cache
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.AssemblyInfo.cs
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.csproj.CoreCompileInputs.cache
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.dll
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\refint\third_sem.dll
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.pdb
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\third_sem.genruntimeconfig.cache
+D:\SL\third_sem\third_sem\obj\Debug\net6.0-windows\ref\third_sem.dll
