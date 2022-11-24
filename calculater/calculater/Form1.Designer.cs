@@ -110,7 +110,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(55, 26);
             this.button6.TabIndex = 0;
-            this.button6.Text = ".";
+            this.button6.Text = "clear";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button5_Click);
             // 
