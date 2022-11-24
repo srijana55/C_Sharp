@@ -19,8 +19,15 @@ namespace calculater
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            
-           display.Text = display.Text + "1";
+            if (display.Text == "+" || display.Text == "-" || display.Text == "*" || display.Text == "÷")
+                {
+                    display.Text = "1";
+                }
+            else
+            {
+                display.Text = display.Text + "1";
+            }
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -56,8 +63,29 @@ namespace calculater
 
         private void button7_Click(object sender, EventArgs e)
         {
-            
-            display.Text = display.Text + "=";
+            decimal firstnum = calculation;
+            decimal secondnum = Convert.ToDecimal(display.Text);
+            switch (operate)
+            {
+                case "+":
+                    calculation =(firstnum + secondnum);
+                    display.Text = calculation.ToString();
+                    break;
+                case "-":
+                    calculation =(firstnum - secondnum);
+                    display.Text = calculation.ToString();
+                    break;
+                case "*":
+                    calculation = (firstnum * secondnum);
+                    display.Text = calculation.ToString();
+                    break;
+                case "÷":
+                    calculation = (firstnum / secondnum);
+                    display.Text = calculation.ToString();
+                    break;
+            }
+
+           
         }
 
         private void button8_Click(object sender, EventArgs e)
