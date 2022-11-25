@@ -73,6 +73,7 @@ namespace calculater
                     break;
                 case "-":
                     calculation =(firstnum - secondnum);
+
                     display.Text = calculation.ToString();
                     break;
                 case "*":
@@ -146,6 +147,23 @@ namespace calculater
             operate = "÷";
             display.Text = "÷";
 
+        }
+
+        private void button17_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        private void button18_Click(object sender, EventArgs e)
+        {
+            //this.hide(); to hide other form at a time
+           // this.Hide();
+           // adding new form 
+            Form3 object_name = new Form3();
+           
+            //tab.ShowDialog();
+            object_name.Show();
         }
     }
 }
