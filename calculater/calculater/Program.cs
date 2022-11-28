@@ -11,6 +11,8 @@ namespace calculater
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            // to open form we want change name of form 
+            // click at program.cs 
             Application.Run(new Form1());
         }
     }

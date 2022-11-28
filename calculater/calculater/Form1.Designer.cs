@@ -45,7 +45,7 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.display = new System.Windows.Forms.TextBox();
-            this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -234,16 +234,15 @@
             this.display.Size = new System.Drawing.Size(238, 73);
             this.display.TabIndex = 1;
             // 
-            // button18
+            // button17
             // 
-            this.button18.BackColor = System.Drawing.Color.SlateBlue;
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button18.Location = new System.Drawing.Point(427, 150);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(98, 29);
-            this.button18.TabIndex = 3;
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.button17.Location = new System.Drawing.Point(380, 51);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(123, 127);
+            this.button17.TabIndex = 4;
+            this.button17.Text = "button17";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click_2);
             // 
             // Form1
             // 
@@ -251,7 +250,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button18);
+            this.Controls.Add(this.button17);
             this.Controls.Add(this.display);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button8);
@@ -295,6 +294,6 @@
         private Button button15;
         private Button button16;
         private TextBox display;
-        private Button button18;
+        private Button button17;
     }
 }

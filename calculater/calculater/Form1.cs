@@ -1,33 +1,34 @@
+using System.Data.SqlClient;
+
 namespace calculater
 {
     public partial class Form1 : Form
     {
         string operate = "";
         decimal calculation = 0;
-        
-        public Form1()
-        {
-            InitializeComponent();
-        }
+
+        SqlConnection con = new SqlConnection("Data Source = DESKTOP-SLAE5T6\\SQLEXPRESS;Initial catalog=bit3rdsem;user id= sa;password=kist@123");
+
+
         public void getvalue()
         {
             if (display.Text != "" && display.Text != "+" && display.Text != "-" && display.Text != "*" && display.Text != "÷")
             {
-                calculation = Convert.ToDecimal(display.Text);    
-               
+                calculation = Convert.ToDecimal(display.Text);
+
             }
         }
         private void button1_Click(object sender, EventArgs e)
         {
             if (display.Text == "+" || display.Text == "-" || display.Text == "*" || display.Text == "÷")
-                {
-                    display.Text = "1";
-                }
+            {
+                display.Text = "1";
+            }
             else
             {
                 display.Text = display.Text + "1";
             }
-           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,7 +58,7 @@ namespace calculater
             getvalue();
             operate = "+";
             display.Text = "+";
-            
+
 
         }
 
@@ -68,11 +69,11 @@ namespace calculater
             switch (operate)
             {
                 case "+":
-                    calculation =(firstnum + secondnum);
+                    calculation = (firstnum + secondnum);
                     display.Text = calculation.ToString();
                     break;
                 case "-":
-                    calculation =(firstnum - secondnum);
+                    calculation = (firstnum - secondnum);
 
                     display.Text = calculation.ToString();
                     break;
@@ -86,7 +87,7 @@ namespace calculater
                     break;
             }
 
-           
+
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -110,14 +111,14 @@ namespace calculater
 
         private void button11_Click(object sender, EventArgs e)
         {
-            
+
             display.Text = display.Text + "6";
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             getvalue();
-            
+
             operate = "*";
             display.Text = "*";
         }
@@ -154,16 +155,29 @@ namespace calculater
 
         }
 
-       
+
         private void button18_Click(object sender, EventArgs e)
         {
             //this.hide(); to hide other form at a time
-           // this.Hide();
-           // adding new form 
-            Form3 object_name = new Form3();
-           
+            this.Hide();
+            // adding new form 
+            //Form3 object_name = new Form3();
+
             //tab.ShowDialog();
-            object_name.Show();
+            //object_name.Show();
         }
+
+        private void button17_Click_2(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "Insert into student values('andip', 'kathmandu', '984767676')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("saved successfully");
+            con.Close();
+        }
+        
+               
+
     }
 }
