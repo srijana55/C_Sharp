@@ -71,7 +71,7 @@ namespace SqlDatabase
 
         private void button5_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Add("1", "sita", "ktm");
+            dataGridView1.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0VOYCwELxHazkV5Wt4g5qzmo7Ym6EkZnyFtnUYPrSfZ7NDAGpcxVBG3bmMe+D8H+nhg1ryOL+400R8dFEZ+wfw==",
+  "dgSpecHash": "njPA9xn24QTHpx29WqsH4i12MOSSL/PdGrMxiZJDMIU5NQKqh/3n/Q7FCit+f9UVIhCrA2HlOQBhr0CiUvF7Qg==",
   "success": true,
-  "projectFilePath": "D:\\SL\\SqlDatabase\\SqlDatabase\\SqlDatabase.csproj",
+  "projectFilePath": "D:\\SL\\c-\\SqlDatabase\\SqlDatabase\\SqlDatabase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\student3\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\student3\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
