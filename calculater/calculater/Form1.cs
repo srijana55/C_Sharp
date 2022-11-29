@@ -169,15 +169,32 @@ namespace calculater
 
         private void button17_Click_2(object sender, EventArgs e)
         {
-            con.Open();
-            string query = "Insert into student values('andip', 'kathmandu', '984767676')";
-            SqlCommand cmd = new SqlCommand(query, con);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("saved successfully");
-            con.Close();
+            try
+            {
+                con.Open();
+                string query = "Delete = 'ramesh',address = 'kathmandu',college = 'kist')";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+
+                //SqlCommand cmd = con.CreateCommand();
+                //cmd.CommandText = query;
+                //Cmd.ExecuteNonQuery();
+
+                MessageBox.Show("saved successfully");
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("updateed successfully");
+                con.Close();
+            }
+
+        }
+
+        private void button18_Click_1(object sender, EventArgs e)
+        {
+
         }
         
-               
-
     }
 }
