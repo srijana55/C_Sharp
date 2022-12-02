@@ -85,7 +85,7 @@ namespace employee
 
         private void button3_Click(object sender, EventArgs e)
         {
-           // wanna die
+       
             con.Open();
 
             string query = "update employee set name='" + txtUserName.Text + "', address='" + txtUserAddr.Text + "' ,salary ='" + txtUserSalary.Text + "' where emp_id = '" + UserID.Text + "' ";
@@ -103,6 +103,26 @@ namespace employee
         private void button6_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            DataGridViewRow data = dataGridView1.CurrentRow;
+            string emp_id = data.Cells["emp_id"].Value.ToString();
+            string name = data.Cells["name"].Value.ToString(); 
+            string address = data.Cells["address"].Value.ToString();
+            string salary = data.Cells["salary"].Value.ToString();
+
+            UserID.Text = emp_id;
+            txtUserName.Text = name;
+            txtUserAddr.Text = address;
+            txtUserSalary.Text = salary;
+
         }
     }
 }

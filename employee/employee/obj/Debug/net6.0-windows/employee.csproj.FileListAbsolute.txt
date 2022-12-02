@@ -46,3 +46,4 @@ D:\SL\c-\employee\employee\obj\Debug\net6.0-windows\refint\employee.dll
 D:\SL\c-\employee\employee\obj\Debug\net6.0-windows\employee.pdb
 D:\SL\c-\employee\employee\obj\Debug\net6.0-windows\employee.genruntimeconfig.cache
 D:\SL\c-\employee\employee\obj\Debug\net6.0-windows\ref\employee.dll
+D:\SL\c-\employee\employee\obj\Debug\net6.0-windows\employee.Form2.resources
