@@ -15,7 +15,7 @@ namespace employee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //to display record (connect db to design)
+             //to display record (connect db to design)
             string ConnectionString = (@"Data Source = DESKTOP-SLAE5T6\SQLEXPRESS;
                                                 Initial Catalog=emp_details;
                                                 Integrated Security=True");
@@ -32,19 +32,31 @@ namespace employee
             table.Load(reader);
 
             dataGridView1.DataSource = table;
-
             con.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             con.Open();
-            string query = "Insert into employee values('" + txtUserName.Text
-                + "','" + txtUserAddr.Text + "','" + txtUserSalary.Text + "')";
-            SqlCommand cmd = new SqlCommand(query, con);
+            string query = "Insert into employee " + "(name,address,salary)" + "values(@name,@address,@salary)";
+
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = query;
+            cmd.Parameters.AddWithValue("@name", txtUserName.Text);
+            cmd.Parameters.AddWithValue("@address", txtUserAddr.Text);
+            cmd.Parameters.AddWithValue("@salary", txtUserSalary.Text);
+
             cmd.ExecuteNonQuery();
             MessageBox.Show("saved successfully");
             con.Close();
+            /* con.Open();
+             string query = "Insert into employee values('" + txtUserName.Text
+                 + "','" + txtUserAddr.Text + "','" + txtUserSalary.Text + "')";
+             SqlCommand cmd = new SqlCommand(query, con);
+             cmd.ExecuteNonQuery();
+             MessageBox.Show("saved successfully");
+             con.Close();
+            */
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -81,6 +93,16 @@ namespace employee
             cmd.ExecuteNonQuery();
             MessageBox.Show("Update successfully");
             con.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
